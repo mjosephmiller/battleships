@@ -20,7 +20,8 @@ body.play_page {
 }
 
 h1 {
-  color:red font-family: 'pokemon';
+  color:red;
+  font-family: 'pokemon';
 }
 
 #submit {

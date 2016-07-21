@@ -1,8 +1,8 @@
-<%= @game.player_1.name %> attacked <%= @game.player_2.name %>!
+<%= @game.current_turn.name %> attacked <%= (@game.opponent_of(@game.current_turn)).name %>!
 <br><br>
 It's super effective!
 <br><br>
-<%= @game.player_2.name %> has <%= @game.player_2.hit_points %>HP left
+<%= (@game.opponent_of(@game.current_turn)).name %> has <%= (@game.opponent_of(@game.current_turn)).hit_points %>HP left
 <form action='/play'>
   <input type='submit' value='OK'>
 </form>
